@@ -44,19 +44,17 @@
         }
           
           document.onkeydown = function(e){
-            if(e.keyCode == 39){
-              pacman.x ++
-            } else if (e.keyCode == 40) {
-              pacman.y ++
-            }
-            else if (e.keyCode == 37) {
-              pacman.x --
-            }
-            else if (e.keyCode == 38) {
-              pacman.y --
-            }
-            
-           
+                if(e.keyCode == 39 && map[pacman.y][pacman.x+1] != 1){
+                  pacman.x ++
+                } else if (e.keyCode == 40 && map[pacman.y+1][pacman.x] != 1) {
+                  pacman.y ++
+                }
+                else if (e.keyCode == 37 && map[pacman.y][pacman.x-1] != 1) {
+                  pacman.x --
+                }
+                else if (e.keyCode == 38 && map[pacman.y-1][pacman.x] != 1) {
+                    pacman.y --
+                }
           if (map[pacman.y][pacman.x]== 2) {
           (map[pacman.y][pacman.x] = 0)
           buildMap(map)
