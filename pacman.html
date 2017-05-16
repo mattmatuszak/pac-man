@@ -39,6 +39,7 @@
                   pacman.x ++
                 } else if (e.keyCode == 40 && map[pacman.y+1][pacman.x] != 1) {
                   pacman.y ++
+                  $('.pacman').css('transform: rotate(180 deg)');
                 }
                 else if (e.keyCode == 37 && map[pacman.y][pacman.x-1] != 1) {
                   pacman.x --
