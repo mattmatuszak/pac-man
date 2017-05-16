@@ -9,10 +9,13 @@
       crossorigin="anonymous">
       </script>
       <script type="text/javascript" src="./scripts/map.js"> </script>
-      <script>$(document).ready(function(){
-        buildMap();
-        // keyDown();
+      <script>
+      var map
+      $(document).ready(function(){
+        map = buildMap()
+
       });
+
       </script>
 
    </head>
@@ -23,8 +26,8 @@
       </div>
       <script type="text/javascript">
         var pacman = {
-          x: 0,
-          y: 0
+          x: 1,
+          y: 1
         }
         function displayPacman(){
           document.getElementById('pacman').style.left = pacman.x*100+"px"
@@ -32,7 +35,6 @@
         }
           
           document.onkeydown = function(e){
-          console.log(e)
             if(e.keyCode == 39){
               pacman.x ++
             } else if (e.keyCode == 40) {
@@ -46,10 +48,10 @@
             }
             
            
-          // if (map[pacman.y][pacman.x]== 2) {
-          // (map[pacman.y][pacman.x] == 0)
-          // buildMap()
-          // }
+          if (map[pacman.y][pacman.x]== 2) {
+          (map[pacman.y][pacman.x] = 0)
+          buildMap(map)
+          }
 
           displayPacman()
         

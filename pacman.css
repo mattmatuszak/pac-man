@@ -57,5 +57,5 @@
 	left: 100px;
 }
 .empty{
-
+	display: table-cell;
 }
