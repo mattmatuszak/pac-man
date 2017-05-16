@@ -13,12 +13,21 @@
 	background-color: blue;
 }
 .coin{
-	outline: thin solid black;
-	height: 20px;
-	width: 20px;
 	background: url(images/coin.jpeg);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
 	
 }
+
+.pacman{
+	background: url(images/pacman-animated.gif);
+	background-size: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+.empty{
+	
+}
+
