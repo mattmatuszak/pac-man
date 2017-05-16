@@ -6,7 +6,7 @@
 
 .container {
 	width: 1000px;
-	margin: auto auto;
+	/*margin: auto auto;*/
 }
 
 .world {
@@ -58,4 +58,10 @@
 }
 .empty{
 	display: table-cell;
+}
+.score{
+	margin-top: 50px;
+	color: white;
+	display: inline-block;
+	outline: thin red solid;
 }
