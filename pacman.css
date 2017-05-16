@@ -13,11 +13,11 @@
 	background-color: blue;
 }
 .coin{
-	background: url(images/coin.jpeg);
+	background: url(images/coin2.png);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
-	
+
 }
 
 #pacman{
@@ -28,6 +28,5 @@
 	position: absolute;
 }
 .empty{
-	
-}
 
+}
