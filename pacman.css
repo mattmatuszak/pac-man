@@ -20,12 +20,16 @@
 
 }
 
-#pacman{
+.pacman{
 	background: url(images/pacman-animated.gif);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: 100px;
+	left: 100px;
 }
 .empty{
 
