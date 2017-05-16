@@ -1,13 +1,38 @@
-.world{
-	outline:thin red solid;
-	height:900px;
+* {
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+
+.container {
+	width: 1000px;
+	margin: auto auto;
+}
+
+.world {
+	display: table;
+	width: 100%;
+}
+
+.row {
+	display: table-row;
+}
+
+.brick {
+	display: table-cell;
+}
+
+.coin {
+	display: table-cell;
+}
+
+.pacman {
+	display: table-cell;
 }
 
 .row div{
-	outline: thin solid black;
 	height: 100px;
 	width: 100px;
-	display: inline-block;
 }
 .brick{
 	background-color: blue;

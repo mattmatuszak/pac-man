@@ -19,11 +19,11 @@ function buildMap() {
 
   let html = '';
   for(let row = 0; row < map.length; row++) {
-    html += `<div class='row'>`
+    html += `\n<div class='row'>\n`
     for (var column = 0; column < map[row].length; column++) {
-      html += `<div class='${getCssClass(map[row][column])}' />`;
+      html += `<div class='${getCssClass(map[row][column])}'></div>`;
     }
-    html += `</div>`
+    html += `\n</div>`
 
   }
   console.log(html);
