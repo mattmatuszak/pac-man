@@ -2,3 +2,18 @@
 	outline:thin red solid;
 	height:900px;
 }
+
+.row div{
+	outline: thin solid black;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}
+.brick{
+	background-color: blue;
+}
+.coin{
+	outline: thin solid black;
+	height: 20px;
+	width: 20px;
+}
