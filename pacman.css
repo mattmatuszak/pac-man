@@ -1,10 +1,25 @@
+/** {
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+
+.container {
+	width: 1800px;
+	margin: auto;
+}*/
+
 .world{
-	outline:thin red solid;
-	height:900px;
+	/*outline:thin red solid;*/
+	/*height:900px;*/
+}
+
+.row {
+
 }
 
 .row div{
-	outline: thin solid black;
+	/*outline: thin solid black;*/
 	height: 100px;
 	width: 100px;
 	display: inline-block;
