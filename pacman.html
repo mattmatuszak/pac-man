@@ -16,91 +16,104 @@
 
    </head>
    <body>
-     <div class="container">
-       <div class="row">
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
+    <div class="container">
+       <div class="pacman"></div>
+       <div class="world">
+         <div class="row">
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+         </div>
+         <div class="row">
+           <div class="brick"></div>
+           <!-- <div class="pacman"></div> -->
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div id="pacman"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="brick"></div>
+         </div>
+         <div class="row">
+           <div class="brick"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="brick"></div>
+         </div>
+         <div class="row">
+           <div class="brick"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="brick"></div>
+         </div>
+         <div class="row">
+           <div class="brick"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="brick"></div>
+         </div>
+         <div class="row">
+           <div class="brick"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="coin"></div>
+           <div class="brick"></div>
+         </div>
+         <div class="row">
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+           <div class="brick"></div>
+         </div>
        </div>
-       <div class="row">
-         <div class="brick"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="empty"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="brick"></div>
-       </div>
-       <div class="row">
-         <div class="brick"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="pacman"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="brick"></div>
-       </div>
-       <div class="row">
-         <div class="brick"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="empty"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="brick"></div>
-       </div>
-       <div class="row">
-         <div class="brick"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="brick"></div>
-       </div>
-       <div class="row">
-         <div class="brick"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="coin"></div>
-         <div class="brick"></div>
-       </div>
-       <div class="row">
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-         <div class="brick"></div>
-       </div>
-     </div>
+       <script type="text/javascript">
+         document.onkeydown = function(e){
+          console.log(e.keycode)
+          if (e.keycode == 37) {
+            document.getElementById('pacman').style.left = 50+"px"
+          }
+         }
+       </script>
+    </div>
    </body>
 </html>

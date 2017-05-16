@@ -1,4 +1,4 @@
-.container{
+.world{
 	outline:thin red solid;
 	height:900px;
 }
@@ -20,12 +20,12 @@
 
 }
 
-.pacman{
+#pacman{
 	background: url(images/pacman-animated.gif);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
-
+	position: absolute;
 }
 .empty{
 
