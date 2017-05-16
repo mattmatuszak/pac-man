@@ -5,8 +5,27 @@
 }
 
 .container {
-	width: 1000px;
-	/*margin: auto auto;*/
+	width: 1150px;
+	display: table;
+}
+.score-div {
+	width: 150px;
+	display: table-cell;
+	text-align: right;
+}
+#score {
+	color: white;
+	font-size: 30px;
+	display: inline;
+}
+#score-text {
+	color: white;
+	font-size: 30px;
+	display: inline;
+}
+.pacman-div {
+	display: table-cell;
+	text-align: left;: 
 }
 
 .world {
