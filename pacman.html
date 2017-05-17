@@ -46,15 +46,18 @@
           document.onkeydown = function(e){
                 if(e.keyCode == 39 && map[pacman.y][pacman.x+1] != 1){
                   pacman.x ++
+                   $(".pacman").addClass("transformRight");
                 } else if (e.keyCode == 40 && map[pacman.y+1][pacman.x] != 1) {
                   pacman.y ++
-                  $('.pacman').css('transform: rotate(180 deg)');
+                  $(".pacman").addClass("transformDown");
                 }
                 else if (e.keyCode == 37 && map[pacman.y][pacman.x-1] != 1) {
                   pacman.x --
+                  $(".pacman").addClass("transformRight");
                 }
                 else if (e.keyCode == 38 && map[pacman.y-1][pacman.x] != 1) {
                     pacman.y --
+                    $(".pacman").addClass("transformLeft");
                 }
           if (map[pacman.y][pacman.x]== 2) {
           (map[pacman.y][pacman.x] = 0)

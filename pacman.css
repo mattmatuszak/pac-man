@@ -64,6 +64,19 @@
 
 }
 
+.transformDown {
+    transform: rotate(90deg);
+}
+.transformLeft {
+    transform: rotate(0deg);
+}
+.transformDown {
+    transform: rotate(90deg);
+}
+.transformDown {
+    transform: rotate(90deg);
+}
+
 .pacman{
 	background: url(images/pacman-animated.gif);
 	background-size: 50px;
