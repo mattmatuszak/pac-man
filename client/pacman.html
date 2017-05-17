@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacman</title>
+    <link rel="stylesheet" type="text/css" href="pacman.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./scripts/map.js">
+    </script>
+    <script>
+        var map
+        var score = 0;
+        $(document).ready(function() {
+            map = buildMap()
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="pacman-div">
+            <div class="world"></div>
+
+            <div class="pacman" id="pacman"></div>
+        </div>
+        <div class="score-div">
+            <p id="score-text">SCORE:&nbsp;</p>
+            <p id="score">0</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var pacman = {
+            x: 1,
+            y: 1
+        }
+
+        function displayPacman() {
+            document.getElementById('pacman').style.left = pacman.x * 100 + "px"
+            document.getElementById('pacman').style.top = pacman.y * 100 + "px"
+        }
+
+        document.onkeydown = function(e) {
+            if (e.keyCode == 39 && map[pacman.y][pacman.x + 1] != 1) {
+                pacman.x++
+            } else if (e.keyCode == 40 && map[pacman.y + 1][pacman.x] != 1) {
+                pacman.y++
+                    $('.pacman').css('transform: rotate(180 deg)');
+            } else if (e.keyCode == 37 && map[pacman.y][pacman.x - 1] != 1) {
+                pacman.x--
+            } else if (e.keyCode == 38 && map[pacman.y - 1][pacman.x] != 1) {
+                pacman.y--
+            }
+            if (map[pacman.y][pacman.x] == 2) {
+                (map[pacman.y][pacman.x] = 0)
+                buildMap(map)
+                score += 1;
+                document.getElementById('score').innerHTML = score;
+            }
+
+            displayPacman()
+
+        }
+    </script>
+    <div class="score">
+        SCORE
+    </div>
+</body>
+
+</html>
